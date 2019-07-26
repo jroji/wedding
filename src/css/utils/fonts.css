@@ -1,0 +1,9 @@
+:root {
+    --font-xl: 4rem;
+    --font-l: 2rem;
+    --font-m: 1.5rem;
+    --font-s: .5rem;
+
+    --font-elegant: 'Caveat', cursive;
+    --font-regular: 'Quicksand', sans-serif;
+}

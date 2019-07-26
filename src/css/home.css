@@ -1,0 +1,98 @@
+@import "./utils/colors.css";
+@import "./utils/fonts.css";
+@import "./utils/paddings.css";
+
+* {
+    font-family: var(--font-elegant);
+    color: var(--color-black);
+    box-sizing: border-box;
+}
+
+.back {
+    background: url(/src/assets/pattern.jpg);
+    position: fixed;
+    z-index: 0;
+    height: 100vh;
+    width: 100%;
+    opacity: .2;
+    top: 0;
+    padding: 0;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: var(--font-xl);
+    font-family: var(--font-elegant);
+}
+
+p {
+    font-size: var(--font-m);
+    color: var(--color-gray);
+}
+
+section {
+    padding: var(--padding-2);
+
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    background: white;
+    margin: auto;
+    max-width: 1080px;
+    width: 100%;
+    opacity: 1;
+    z-index: 1;
+    position: relative;
+    top: 0;
+    padding: var(--padding-2);
+    min-height: 100vh;
+}
+
+.home {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('/src/assets/flowers.png');
+    background-position: center;
+}
+
+.content {
+    text-align: center;
+}
+
+.content p {
+    margin: var(--padding-1);
+}
+
+.content .content_date {
+    text-align: center;
+    font-size: var(--font-l);
+    margin-bottom: var(--padding-4);
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form img {
+    cursor: pointer;
+    transition: all .5s;
+    outline: none;
+
+    &:hover, &:focus {
+        transform: scale(1.3);
+    }
+}

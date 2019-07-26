@@ -1,0 +1,7 @@
+:root {
+    --prueba-var: red;
+}
+
+h1 {
+    color: var(--prueba-var);
+}
